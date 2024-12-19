@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc switch case</title>
+</head>
+<body>
+    <div id="today"></div>
+    <input type="submit" onclick="displayToDay();">
+    <script>
+        function displayToDay(){
+            let date = new Date();
+            switch(date.getDay()){
+            case 0:
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Chu nhat</h2>";
+                break;
+            case 1: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu hai</h2>";
+                break;
+            case 2: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu ba</h2>";
+                break;
+            case 3: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu tu</h2>";
+                break;
+            case 4: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu nam</h2>";
+                break;
+            case 5: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu sau</h2>";
+                break;
+            case 6: 
+                document.getElementById("#today").innerHTML = "<h2>Hom nay la: Thu bay</h2>";
+                break;
+        }
+        }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai bao bien</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        let b = 2;
+        const c = 3;
+        //Su khac nhau giua 3 cach khai bao
+        // 1. Scope
+        {
+            var d = 4;
+            let e = 5;
+            const f = 6;
+        }
+        console.log("d = ",d);//ok
+        console.log("e = ",e);//error
+        console.log("f = ",f);//error
+
+        //2. hoisting
+        g = 7;
+        var g;
+        console.log("g =",g);
+        // Doi voi let va const thi phai khai bao truoc
+        // h = 8;
+        // let h;
+        // console.log("h =",h);
+
+        //3. assignment
+        var x = 10;
+        x = 100;
+        let y = 11;
+        y = 200;
+        const z = 12;
+        //z = 300;//error: vi z la hang so.
+    </script>
+</body>
+</html>

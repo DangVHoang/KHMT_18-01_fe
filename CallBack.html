@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+        //Callback?
+        //1. La mot ham
+        //2. Truyen nhu mot doi so cho 1 ham khac
+        // function myFunction(name,callback){
+        //     console.log("Xin chao!",name);
+        //     callback()
+        // }
+        // function myCallback(){
+        //     console.log("Chuc ban mot ngay vui ve!");
+        // }
+        //Goi ham
+        // myFunction("Viet Hoang",myCallback);
+        
+        //-Vidu1: 
+        // function first(){
+        //     console.log(1);
+        // }
+        // function second(){
+        //     console.log(2);
+        // }
+        //Goi ham
+        // first();
+        // second();
+        //output:
+        //1
+        //2
+
+        //- Vidu2
+        // let outputOne = function(){
+        //     console.log(1);
+        // }
+        // function first(){
+        //     setTimeout(outputOne, 1000);
+        // }
+        // function second(){
+        //     console.log(2);
+        // }
+        //goi ham
+        // first();
+        // second();
+
+        //-Vi du 3:
+        
+        function first(callback){
+            setTimeout(()=>{
+                console.log(1);
+                callback();
+            },1000);
+        }
+        function second(){
+            console.log(2);
+        }
+        first(second);
+    </script>
+</body>
+</html>

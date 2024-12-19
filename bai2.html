@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+</head>
+<body>
+    <script>
+    function filterArray(array, callback){
+        let result =[];
+        for(let i = 0; i < array.length; i++)
+        if(callback(array[i])){
+            result.push(array[i]);
+        }
+    }
+    return result;
+    //goi ham
+    console.log(filterArray([4,5,7,12,13],n => n % 2 === 0));
+    </script>
+</body>
+</html>

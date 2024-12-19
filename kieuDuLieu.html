@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kieu du lieu</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        console.log(typeof x);//Number
+        x = "Nguyen Van An";
+        console.log(typeof x);//string
+        x = (7>2);
+        console.log(typeof x);//boolean
+        x = {
+            "name":"Nguyen Van  An",
+            "age": 20
+        }
+        console.log(typeof x); //object
+        let y;
+        console.log(typeof y);//undefined
+
+        //CHUYEN KIEU DU LIEU: la chuyen tu kieu nay sang kieu khac
+        
+        //1. Chuyển kiểu tường minh
+        //- Chuyển sang số(number)
+        let s = "540";
+        console.log(typeof s); //string
+        let n = parseInt(s);
+        let n2 = parseFloat("52.3");
+        let n3 = Number("40");
+        //-Chuyen sang chuoi(string)
+        let n4 = 43;
+        let s1 = String(n4);
+        let s2 = n4.toString();
+        //- Chuyen sang dang boolean:
+        let n5 = 1;
+        let b1 = Boolean(n5);
+        console.log(typeof b1);
+
+        //2. Chuyen kieu ngam dinh(tu dong)
+        let n6 = 20;
+        let n7 = "30";
+        let n8 = n6 + n7;//Chuoi"2030"
+        console.log(typeof n8);
+        //- Trong phep toan so hoc
+        let n9 = 5;
+        let n10 = "6";
+        let n11 = n9 * n10;
+        console.log("n11 =", n11);
+        //- Trong cac phep so sanh
+        console.log(n9 == n10);
+    </script>
+</body>
+</html>

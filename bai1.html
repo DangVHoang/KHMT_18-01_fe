@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+<body>
+    <script>
+    function calculate(a, b, callback) {
+        return callback(a, b);
+      }
+    let add = (a,b) => a + b;
+    let subtract = (a,b) => a - b;
+    let multiply = (a,b) => a * b;
+    let divide = (a,b) => {
+        if ( b=== 0) {
+            return "b phai khac 0";
+        }else
+        return a/b;
+    }
+    //goi ham
+    console.log("5 + 7 =", calculate(5,7,add));
+    console.log("9 - 3 =", calculate(9,3,subtract));
+    console.log("2 * 6 =", calculate(2,6,multiply));
+    console.log("8 / 4 =", calculate(8,4,divide));
+    </script>
+</body>
+</html>

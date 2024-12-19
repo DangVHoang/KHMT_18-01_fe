@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc lặp</title>
+</head>
+<body>
+    <script>
+        //Khai bao mang
+        const names = ["Hoang", "Bach", "Binh", "Anh", "Nam"];
+        //1.Cau truc lap for
+        // for(let i = 0; i < name.length;i++){
+        //     console.log(names[i]);
+        // }
+        //2. Cau truc lap While
+        // let i = 0;
+        // while (i < names.length) {
+        //     console.log(names[i]);
+        //     i++;
+        // }
+        // //3. Cau truc lap do...while
+        // let i = 0;
+        // do {
+        //     console.log(names[i]);
+        //     i++;
+        // } while (i < name.length);
+        //4. Cau truc lap for..in: dung de lap qua cac phan tu cua mang 
+        // hoac lap qua cac thuoc tinh cua 1 doi tuong
+        //- Loc qua cac phan tu cua mang:
+        // const flowers = ["Lan","Dao","Hue","Hong"];
+        // for (let i in flowers) {
+        //     console.log("Hoa",flowers[i]);   
+        // }
+        //- Lap qua cac thuoc tinh cua mot doi tuong:
+        // let student = {
+        //     "id":101, 
+        //     "name":"Dang Viet Hoang",
+        //     "age":19
+        // }
+        // for (let i in student) {
+        //     console.log(i,":",student[i]);   
+        // }
+        //5. Cau truc lap for.. of: dung de lap qua cac phan tu cua mang
+        //hoac cac ki tu cua mot chuoi
+        //- Lap qua cac phan tu cua mang 
+        const products = ["May tinh","May in","Dien thoai"];
+        for(let product of products){
+            console.log(product);
+        }
+        //- Lap qua cac ki tu cua mot chuoi
+        const str = "Dai Nam";
+        for(let s of str){
+            console.log(s);
+        }
+        //6. Thoat ra khoi vong lap: break, continue
+    </script>
+</body>
+</html>
